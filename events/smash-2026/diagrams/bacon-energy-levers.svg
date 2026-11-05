@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="800" height="650" role="img" aria-labelledby="t d" style="font-family: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">Nine levers on the energy of one AI task</title>
+  <desc id="d">Nine levers listed from the task itself down to the data centre: whether you need a big model, which model, how much reasoning, weights read per token, memory per token, tokens per weight read, the serving system, hardware settings, and the data centre. Adapted from Pierre-Luc Bacon's talk at SMASH 2026.</desc>
+  <rect x="0" y="0" width="800" height="650" fill="#0a1524"/>
+  <text x="72" y="42" fill="#e6edf3" font-size="22" font-weight="700">Nine levers on the energy of one AI task</text>
+  <text x="72" y="68" fill="#9cb0c6" font-size="16">From the task itself down to the building it runs in</text>
+  <line x1="40" y1="104" x2="40" y2="580" stroke="#3b5a7a" stroke-width="2"/>
+  <polygon points="33,578 47,578 40,592" fill="#3b5a7a"/>
+  <text x="40" y="96" fill="#9cb0c6" font-size="14" text-anchor="middle">task</text>
+  <text x="40" y="608" fill="#9cb0c6" font-size="14" text-anchor="middle">building</text>
+  <g font-size="18">
+    <rect x="72" y="96" width="696" height="50" fill="#11283d" stroke="#22d3ee"/>
+    <text x="92" y="126" fill="#8aa0b8" font-size="15">01</text><text x="128" y="126" fill="#e6edf3" font-weight="600">Do you need a big model?</text><text x="420" y="126" fill="#9cb0c6" font-size="15">A classical method or a small task model</text>
+    <rect x="72" y="152" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="182" fill="#8aa0b8" font-size="15">02</text><text x="128" y="182" fill="#e6edf3" font-weight="600">Which model?</text><text x="420" y="182" fill="#9cb0c6" font-size="15">Size, open-weight family, routing</text>
+    <rect x="72" y="208" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="238" fill="#8aa0b8" font-size="15">03</text><text x="128" y="238" fill="#e6edf3" font-weight="600">How much reasoning?</text><text x="420" y="238" fill="#9cb0c6" font-size="15">Thinking budget, shorter answers, stopping</text>
+    <rect x="72" y="264" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="294" fill="#8aa0b8" font-size="15">04</text><text x="128" y="294" fill="#e6edf3" font-weight="600">Weights read per token</text><text x="420" y="294" fill="#9cb0c6" font-size="15">Lower-precision weights, mixture of experts</text>
+    <rect x="72" y="320" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="350" fill="#8aa0b8" font-size="15">05</text><text x="128" y="350" fill="#e6edf3" font-weight="600">Memory per token</text><text x="420" y="350" fill="#9cb0c6" font-size="15">Leaner attention, state-space models</text>
+    <rect x="72" y="376" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="406" fill="#8aa0b8" font-size="15">06</text><text x="128" y="406" fill="#e6edf3" font-weight="600">Tokens per weight read</text><text x="420" y="406" fill="#9cb0c6" font-size="15">Speculative decoding, multi-token prediction</text>
+    <rect x="72" y="432" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="462" fill="#8aa0b8" font-size="15">07</text><text x="128" y="462" fill="#e6edf3" font-weight="600">Serving system</text><text x="420" y="462" fill="#9cb0c6" font-size="15">Batching, cache paging, scheduling</text>
+    <rect x="72" y="488" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="518" fill="#8aa0b8" font-size="15">08</text><text x="128" y="518" fill="#e6edf3" font-weight="600">Hardware settings</text><text x="420" y="518" fill="#9cb0c6" font-size="15">GPU clock speed, choice of chip</text>
+    <rect x="72" y="544" width="696" height="50" fill="#0d1b2a" stroke="#1e3048"/>
+    <text x="92" y="574" fill="#8aa0b8" font-size="15">09</text><text x="128" y="574" fill="#e6edf3" font-weight="600">Data centre</text><text x="420" y="574" fill="#9cb0c6" font-size="15">Idle machines, cooling, the power grid</text>
+  </g>
+  <text x="72" y="630" fill="#9cb0c6" font-size="15">Highlighted: not using a big model when you don't need one saves the most.</text>
+</svg>

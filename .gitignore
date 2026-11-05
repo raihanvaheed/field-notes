@@ -1,5 +1,18 @@
 # Per-step notes from coding agents (local only)
 explanation.md
+.pr-description.md
+/local/
+
+# Dependencies and build output
+node_modules/
+.next/
+out/
+.wrangler/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment
+.env*
 
 # OS and editor files
 .DS_Store

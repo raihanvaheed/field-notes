@@ -1,0 +1,368 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Same token names as the portfolio. */
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-rule: var(--rule);
+  --color-shade: var(--shade);
+  --color-signal: var(--signal);
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  /* Extra tokens the approved designs use. */
+  --color-surface: var(--surface);
+  --color-surface-hi: var(--surface-hi);
+  --color-muted: var(--muted);
+  --color-soft: var(--soft);
+  --color-body: var(--body);
+  --color-signal-hi: var(--signal-hi);
+  --color-on-signal: var(--on-signal);
+  --color-track: var(--track);
+  --color-handle: var(--handle);
+  --font-sans: var(--font-archivo);
+  --font-heading: var(--font-archivo);
+}
+
+/*
+ * Dark only: one colour scheme, no prefers-color-scheme branching.
+ * The first six tokens are the portfolio's default :root tokens.
+ */
+:root {
+  color-scheme: dark;
+  --ink: #e6edf3;
+  --paper: #0d1b2a;
+  --rule: #1e3048;
+  --shade: #9cb0c6;
+  --signal: #22d3ee;
+  --tract: #3b82f6;
+
+  --surface: #0a1524;
+  --surface-hi: #11283d;
+  --muted: #8aa0b8;
+  --soft: #c3d0dd;
+  --body: #d5dee8;
+  --signal-hi: #67e8f9;
+  --on-signal: #062029;
+  --track: #13263b;
+  --handle: #2a4260;
+}
+
+@layer base {
+  a,
+  button,
+  [role="button"] {
+    transition:
+      background-color 150ms ease,
+      color 150ms ease,
+      border-color 150ms ease,
+      outline-color 150ms ease;
+  }
+
+  * {
+    @apply border-rule outline-signal/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+
+  /* One focus style everywhere, as in the designs and the portfolio. */
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 2px;
+  }
+}
+
+/* No transitions or animations for people who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.accent-bar {
+  width: 44px;
+  height: 3px;
+  background-color: var(--signal);
+}
+
+@media (min-width: 768px) {
+  .accent-bar {
+    width: 56px;
+  }
+}
+
+/* A horizontally scrolling row with no visible scrollbar (theme chips on a phone). */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Timeline threads: drawn in a 0-100 wide SVG stretched over the grid */
+/* ------------------------------------------------------------------ */
+
+.threads path {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+}
+
+.threads .s0 {
+  stroke-width: 2.2;
+  opacity: 0.95;
+}
+
+.threads .s1,
+.threads .s2 {
+  stroke-width: 1.1;
+  opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------ */
+/* Rendered notes (the "Key ideas" and "In one line" Markdown)         */
+/* ------------------------------------------------------------------ */
+
+.notes-prose {
+  color: var(--body);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+@media (min-width: 768px) {
+  .notes-prose {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+.notes-prose > * + * {
+  margin-top: 14px;
+}
+
+.notes-prose > h2 {
+  margin-top: 36px;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.notes-prose > h2 + * {
+  margin-top: 10px;
+}
+
+.notes-prose > h3 {
+  margin-top: 28px;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .notes-prose > h2 {
+    font-size: 24px;
+  }
+  .notes-prose > h2 + * {
+    margin-top: 14px;
+  }
+  .notes-prose > h3 {
+    font-size: 19px;
+  }
+}
+
+.notes-prose > :first-child {
+  margin-top: 0;
+}
+
+.notes-prose > figure,
+.notes-prose > .formula {
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+.notes-prose strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.notes-prose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-prose ul > li {
+  position: relative;
+  padding-left: calc(12px + 1rem);
+}
+
+.notes-prose ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(0.85em - 0.5px);
+  width: 12px;
+  height: 1px;
+  background-color: var(--signal);
+}
+
+.notes-prose ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.notes-prose ol > li::marker {
+  color: var(--shade);
+}
+
+.notes-prose li + li {
+  margin-top: 8px;
+}
+
+.notes-prose li > p + p,
+.notes-prose li > ul,
+.notes-prose li > ol {
+  margin-top: 8px;
+}
+
+.notes-prose blockquote {
+  border-left: 2px solid var(--signal);
+  padding-left: 16px;
+  color: var(--soft);
+}
+
+.notes-prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 28px 0;
+}
+
+.notes-prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 0.05em 0.35em;
+}
+
+.notes-prose pre {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+
+.notes-prose pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+/* The one-sentence summary at the top of a talk page. */
+.notes-lead {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+  .notes-lead {
+    font-size: 22px;
+  }
+}
+
+.notes-lead > * + * {
+  margin-top: 10px;
+}
+
+/* A dashed word that opens a term in the side panel. */
+.term-btn {
+  background: none;
+  border: 0;
+  border-bottom: 1px dashed var(--signal);
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: help;
+}
+
+.term-btn:hover {
+  background: rgb(34 211 238 / 0.12);
+}
+
+/* A blue reference that opens the reading list. */
+.ref-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--signal);
+  font: inherit;
+  text-align: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.ref-btn:hover {
+  color: var(--signal-hi);
+}
+
+/* Any other link in the notes: not blue, so it is not mistaken for a reference. */
+.ext-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--shade);
+  text-underline-offset: 3px;
+}
+
+.ext-link:hover {
+  color: var(--signal-hi);
+  text-decoration-color: var(--signal-hi);
+}
+
+/* Inline diagrams fill their figure and keep their shape. */
+.diagram svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * Below 768px a diagram would shrink to about 40% and its text with it. Instead
+ * it keeps a minimum width of 640px inside a box that scrolls sideways, so the
+ * page itself never does. From 768px up the box does nothing and the diagram is
+ * laid out exactly as before.
+ */
+.diagram-box {
+  overflow-x: auto;
+}
+
+.diagram {
+  min-width: 640px;
+}
+
+@media (min-width: 768px) {
+  .diagram-box {
+    overflow-x: visible;
+  }
+
+  .diagram {
+    min-width: 0;
+  }
+}

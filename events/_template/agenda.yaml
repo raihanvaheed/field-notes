@@ -1,0 +1,35 @@
+# Copy this folder to events/<event-slug>/ and fill it in. See docs/new-event.md.
+# Only sessions you took notes on go here.
+event:
+  slug: event-slug-2026            # must match the folder name; used in the URL
+  name: "Event Name 2026"
+  full_name: "Full name of the event"
+  kind: Conference                 # Conference, Workshop, Symposium...
+  dates: [2026-01-01, 2026-01-02]
+  date_label: "1–2 January 2026"
+  venue: "Venue, City"
+  agenda_url: ""
+  description: "One sentence on what the event was about."
+
+# Theme tags for the timeline. Colours must read on the dark background.
+# Reuse these five colours in this order: #22d3ee, #fbbf24, #a78bfa, #34d399, #f472b6
+themes:
+  - id: theme-one
+    label: "Theme one"
+    color: "#22d3ee"
+
+sessions:
+  - slug: speaker-surname          # file name in talks/ and the page URL
+    day: 1
+    date: 2026-01-01
+    start: "09:00"
+    end: "09:30"
+    session: Keynote               # Keynote, Invited talk, Panel...
+    speakers:
+      - name: "Speaker Name"
+        affiliation: "Affiliation, as listed by the event"
+    title: ""                      # official title if known
+    topic: "Short description of the talk"
+    summary: "One line for the timeline card."
+    themes: [theme-one]
+    page: talks/speaker-surname.md

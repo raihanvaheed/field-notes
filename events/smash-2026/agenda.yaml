@@ -1,0 +1,218 @@
+# Sessions covered in these notes. Sessions without notes are left out on purpose.
+# Names and affiliations are as listed on the SMASH site.
+event:
+  slug: smash-2026
+  name: SMASH 2026
+  full_name: Symposium on Model Accountability, Sustainability and Healthcare
+  kind: Conference
+  dates: [2026-11-03, 2026-11-04]
+  date_label: "3–4 November 2026"
+  venue: "Mila, Montréal"
+  agenda_url: https://smashcon.org/en/agenda/
+  description: "Two days at Mila on making AI accountable, sustainable and useful in healthcare."
+
+# Theme tags used on the timeline. Colours are chosen to read on the site's dark background.
+themes:
+  - id: measure
+    label: Measure it properly
+    color: "#22d3ee"
+  - id: energy
+    label: Energy and footprint
+    color: "#fbbf24"
+  - id: account
+    label: Checks that work
+    color: "#a78bfa"
+  - id: health
+    label: AI in real hospitals
+    color: "#34d399"
+  - id: open
+    label: Open and shared
+    color: "#f472b6"
+
+sessions:
+  - slug: doshi-velez
+    day: 1
+    date: 2026-11-03
+    start: "09:40"
+    end: "10:40"
+    session: Keynote
+    speakers:
+      - name: "Finale Doshi-Velez"
+        affiliation: "Harvard University"
+    title: ""
+    topic: "How to get effective human–AI collaboration"
+    summary: "Keep models small enough to inspect, and design tools that keep people thinking instead of rubber-stamping."
+    themes: [account, health]
+    page: talks/doshi-velez.md
+
+  - slug: gaud
+    day: 1
+    date: 2026-11-03
+    start: "10:40"
+    end: "11:10"
+    session: Keynote
+    speakers:
+      - name: "Vrushali Gaud"
+        affiliation: "Google Sustainability"
+    title: ""
+    topic: "Looking beyond the model: the physical footprint of AI"
+    summary: "AI's footprint is physical, so don't put the burden on users: build the system right and measure it."
+    themes: [energy, measure]
+    page: talks/gaud.md
+
+  - slug: luccioni
+    day: 1
+    date: 2026-11-03
+    start: "11:10"
+    end: "11:40"
+    session: Keynote
+    speakers:
+      - name: "Sasha Luccioni"
+        affiliation: "Sustainable AI Group"
+    title: ""
+    topic: "AI sustainability and what we should be measuring"
+    summary: "We can't judge AI's climate impact without numbers, so measure models, code and company footprints."
+    themes: [energy, measure, open]
+    page: talks/luccioni.md
+
+  - slug: el-emam
+    day: 1
+    date: 2026-11-03
+    start: "14:30"
+    end: "15:30"
+    session: Keynote
+    speakers:
+      - name: "Khaled El Emam"
+        affiliation: "CHEO Research Institute, University of Ottawa"
+    title: ""
+    topic: "Learnings from generating synthetic health data"
+    summary: "Synthetic health data works for sharing and augmentation if you measure privacy and use about ten datasets."
+    themes: [health, open, measure]
+    page: talks/el-emam.md
+
+  - slug: vanschoren
+    day: 2
+    date: 2026-11-04
+    start: "09:40"
+    end: "10:40"
+    session: Keynote
+    speakers:
+      - name: "Joaquin Vanschoren"
+        affiliation: "TU Eindhoven, AMORE"
+    title: ""
+    topic: "Building an open ecosystem for AI research"
+    summary: "The hard part isn't the architecture but data, evaluation and infrastructure, and that should be open."
+    themes: [open, measure]
+    page: talks/vanschoren.md
+
+  - slug: panel
+    day: 2
+    date: 2026-11-04
+    start: "11:00"
+    end: "12:00"
+    session: Panel
+    speakers:
+      - name: "Alan Forster"
+        affiliation: "McGill University Health Centre Research Institute"
+      - name: "Kathy Malas"
+        affiliation: "OROT, Jewish General Hospital"
+      - name: "Danina Kapetanovic"
+        affiliation: "Waterloo Regional Health Network"
+    moderator:
+      name: "Samer Faraj"
+      affiliation: "Institute for Transforming Healthcare, McGill University"
+    title: ""
+    topic: "AI, healthcare and organisational change"
+    summary: "In hospitals, AI fails on workflow, roles and trust more than on the model, and quiet errors are the scariest."
+    themes: [health, account]
+    page: talks/panel.md
+
+  - slug: dilhac
+    day: 2
+    date: 2026-11-04
+    start: "13:00"
+    end: "13:30"
+    session: Invited talk
+    speakers:
+      - name: "Marc-Antoine Dilhac"
+        affiliation: "Université de Montréal; Algora Lab; CIFAR Chair in AI Ethics, Mila"
+    title: ""
+    topic: "Surviving AI or living well with AI?"
+    summary: "AI ethics should ask what people and worlds AI helps us become, not only which risks to avoid."
+    themes: [account]
+    page: talks/dilhac.md
+
+  - slug: bacon
+    day: 2
+    date: 2026-11-04
+    start: "13:30"
+    end: "14:00"
+    session: Invited talk
+    speakers:
+      - name: "Pierre-Luc Bacon"
+        affiliation: "Université de Montréal, CIFAR, Mila"
+    title: ""
+    topic: "Making AI inference more sustainable"
+    summary: "Running models is where AI wastes energy, mostly by moving data: count joules, not tokens."
+    themes: [energy, measure, account]
+    page: talks/bacon.md
+
+  - slug: parra-orlandoni
+    day: 2
+    date: 2026-11-04
+    start: "14:20"
+    end: "14:50"
+    session: Invited talk
+    speakers:
+      - name: "M. Alejandra Parra-Orlandoni"
+        affiliation: "Harvard Kennedy School"
+    title: "Governing the Digital Gorilla"
+    topic: "Governing the digital gorilla"
+    summary: "Treat advanced AI as a fourth actor in society, and govern it with checks on its power that actually work."
+    themes: [account]
+    page: talks/parra-orlandoni.md
+
+  - slug: michel
+    day: 2
+    date: 2026-11-04
+    start: "14:50"
+    end: "15:20"
+    session: Invited talk
+    speakers:
+      - name: "Jesse Michel"
+        affiliation: "Tutor Intelligence"
+    title: ""
+    topic: "Robots in society"
+    summary: "Robots now learn from a few demonstrations plus simulation. Safety, jobs and materials come next."
+    themes: [account]
+    page: talks/michel.md
+
+  - slug: lin
+    day: 2
+    date: 2026-11-04
+    start: "15:30"
+    end: "16:00"
+    session: Invited talk
+    speakers:
+      - name: "Michelle Lin"
+        affiliation: "Mila, Université de Montréal"
+    title: ""
+    topic: "Evaluations you can trust"
+    summary: "A score means little without how it was measured and who measured it."
+    themes: [measure, open, energy]
+    page: talks/lin.md
+
+  - slug: kadivar
+    day: 2
+    date: 2026-11-04
+    start: "16:00"
+    end: "16:30"
+    session: Invited talk
+    speakers:
+      - name: "Amir Kadivar"
+        affiliation: "Tali AI"
+    title: ""
+    topic: "How to actually deploy AI in healthcare"
+    summary: "Clinical admin is ripe for AI. The hard parts are integration and how people work."
+    themes: [health]
+    page: talks/kadivar.md

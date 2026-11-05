@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" aria-labelledby="t d" style="font-family: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">Same model, same benchmark, different scores</title>
+  <desc id="d">One model and one benchmark are run through three different evaluation harnesses, and each reports a different score. Illustration of a point made by Michelle Lin at SMASH 2026.</desc>
+  <rect x="0" y="0" width="800" height="380" fill="#0a1524"/>
+  <g font-size="17" text-anchor="middle">
+    <rect x="40" y="112" width="170" height="54" fill="#0d1b2a" stroke="#3b5a7a" stroke-width="2"/><text x="125" y="144" fill="#e6edf3" font-weight="600">Same model</text>
+    <rect x="40" y="190" width="170" height="54" fill="#0d1b2a" stroke="#3b5a7a" stroke-width="2"/><text x="125" y="222" fill="#e6edf3" font-weight="600">Same benchmark</text>
+  </g>
+  <g stroke="#3b5a7a" stroke-width="2" fill="none">
+    <path d="M210 139 H250 V178"/>
+    <path d="M210 217 H250 V178"/>
+    <path d="M250 178 C 275 178, 275 97, 300 97"/>
+    <line x1="250" y1="178" x2="300" y2="178"/>
+    <path d="M250 178 C 275 178, 275 259, 300 259"/>
+  </g>
+  <g font-size="17" text-anchor="middle">
+    <rect x="300" y="70" width="170" height="54" fill="#0d1b2a" stroke="#1e3048"/><text x="385" y="102" fill="#e6edf3">Harness A</text>
+    <rect x="300" y="151" width="170" height="54" fill="#0d1b2a" stroke="#1e3048"/><text x="385" y="183" fill="#e6edf3">Harness B</text>
+    <rect x="300" y="232" width="170" height="54" fill="#0d1b2a" stroke="#1e3048"/><text x="385" y="264" fill="#e6edf3">Harness C</text>
+  </g>
+  <g stroke="#1e3048" stroke-width="2">
+    <line x1="470" y1="97" x2="510" y2="97"/>
+    <line x1="470" y1="178" x2="510" y2="178"/>
+    <line x1="470" y1="259" x2="510" y2="259"/>
+  </g>
+  <rect x="510" y="84" width="250" height="26" fill="#22d3ee"/>
+  <rect x="510" y="165" width="190" height="26" fill="#22d3ee" opacity="0.75"/>
+  <rect x="510" y="246" width="120" height="26" fill="#22d3ee" opacity="0.5"/>
+  <text x="510" y="62" fill="#9cb0c6" font-size="15">Reported score</text>
+  <text x="40" y="340" fill="#c3d0dd" font-size="16">Each harness formats the questions and reads the answers its own way,</text>
+  <text x="40" y="360" fill="#c3d0dd" font-size="16">so the same model gets different scores.</text>
+</svg>

@@ -25,4 +25,4 @@ Every diagram gets one of these lines underneath it:
 - `Illustration of a point made by <Speaker> at SMASH 2026.` for ideas they explained without a figure.
 
 ## Status
-Each talk file has `status: draft` until it has been checked against these rules, then `status: published`. Only published talks appear on the live page.
+Each talk file has `status: draft` until it has been checked against these rules, then `status: published`. Only published talks appear on the live site.

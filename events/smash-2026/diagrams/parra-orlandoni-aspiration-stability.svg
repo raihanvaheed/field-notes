@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-labelledby="t d" style="font-family: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">The aspiration–stability matrix</title>
+  <desc id="d">A two-by-two grid. High stability and low aspiration: surviving, not thriving. High stability and high aspiration: high potential, the goal. Low stability and low aspiration: fragile collapse. Low stability and high aspiration: creative chaos. Adapted from M. Alejandra Parra-Orlandoni's talk at SMASH 2026.</desc>
+  <rect x="0" y="0" width="800" height="560" fill="#0a1524"/>
+  <text x="295" y="50" fill="#9cb0c6" font-size="16" font-weight="600" text-anchor="middle">Low aspiration</text>
+  <text x="625" y="50" fill="#9cb0c6" font-size="16" font-weight="600" text-anchor="middle">High aspiration</text>
+  <text x="66" y="185" fill="#9cb0c6" font-size="16" font-weight="600" text-anchor="middle"><tspan x="66">High</tspan><tspan x="66" dy="20">stability</tspan></text>
+  <text x="66" y="415" fill="#9cb0c6" font-size="16" font-weight="600" text-anchor="middle"><tspan x="66">Low</tspan><tspan x="66" dy="20">stability</tspan></text>
+
+  <rect x="130" y="70" width="330" height="220" fill="#0d1b2a" stroke="#1e3048"/>
+  <text x="150" y="104" fill="#e6edf3" font-size="20" font-weight="700">Surviving, not thriving</text>
+  <text font-size="16" fill="#c3d0dd"><tspan x="150" y="136">Ordered and predictable, but power</tspan><tspan x="150" dy="22">is concentrated</tspan><tspan x="150" dy="28">Limited innovation and opportunity</tspan></text>
+  <text x="150" y="266" fill="#9cb0c6" font-size="15">Goal: open space for aspiration</text>
+
+  <rect x="470" y="70" width="310" height="220" fill="#11283d" stroke="#22d3ee" stroke-width="2"/>
+  <text x="490" y="104" fill="#e6edf3" font-size="20" font-weight="700">High potential</text>
+  <text font-size="16" fill="#c3d0dd"><tspan x="490" y="136">Broad opportunity and</tspan><tspan x="490" dy="22">balanced power</tspan><tspan x="490" dy="28">The benefits of AI, with</tspan><tspan x="490" dy="22">safeguards in place</tspan></text>
+  <text x="490" y="266" fill="#22d3ee" font-size="15">Goal: preserve and adapt</text>
+
+  <rect x="130" y="300" width="330" height="220" fill="#0d1b2a" stroke="#1e3048"/>
+  <text x="150" y="334" fill="#e6edf3" font-size="20" font-weight="700">Fragile collapse</text>
+  <text font-size="16" fill="#c3d0dd"><tspan x="150" y="366">Severe power imbalances or shocks</tspan><tspan x="150" dy="28">Low trust and low opportunity</tspan></text>
+  <text x="150" y="496" fill="#9cb0c6" font-size="15">Goal: emergency stabilisation</text>
+
+  <rect x="470" y="300" width="310" height="220" fill="#0d1b2a" stroke="#1e3048"/>
+  <text x="490" y="334" fill="#e6edf3" font-size="20" font-weight="700">Creative chaos</text>
+  <text font-size="16" fill="#c3d0dd"><tspan x="490" y="366">Abundant ideas and freedom</tspan><tspan x="490" dy="28">Risk of collapse without</tspan><tspan x="490" dy="22">structure</tspan></text>
+  <text x="490" y="496" fill="#9cb0c6" font-size="15">Goal: channel energy into stability</text>
+</svg>

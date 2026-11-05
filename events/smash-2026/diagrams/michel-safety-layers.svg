@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-labelledby="t d" style="font-family: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">Layers of safety around a robot's AI model</title>
+  <desc id="d">The AI model at the centre sends motion commands. Around it: workspace limits, then collision avoidance and human detection, then an emergency stop. Illustration of a point made by Jesse Michel at SMASH 2026.</desc>
+  <rect x="0" y="0" width="800" height="460" fill="#0a1524"/>
+  <rect x="40" y="40" width="720" height="380" rx="14" fill="#0d1b2a" stroke="#1e3048" stroke-width="2"/>
+  <text x="64" y="70" fill="#e6edf3" font-size="18" font-weight="700">Emergency stop</text>
+  <text x="64" y="90" fill="#9cb0c6" font-size="15">Press the button and the robot is off</text>
+  <rect x="90" y="104" width="620" height="290" rx="12" fill="#0f2033" stroke="#24405f" stroke-width="2"/>
+  <text x="114" y="134" fill="#e6edf3" font-size="18" font-weight="700">Collision avoidance and human detection</text>
+  <text x="114" y="154" fill="#9cb0c6" font-size="15">Sensors map the space; the robot slows or stops when a person is near</text>
+  <rect x="140" y="170" width="520" height="198" rx="10" fill="#11253a" stroke="#2c4d71" stroke-width="2"/>
+  <text x="164" y="200" fill="#e6edf3" font-size="18" font-weight="700">Workspace limits</text>
+  <text x="164" y="220" fill="#9cb0c6" font-size="15">Don't hit the table, or the robot's own arm</text>
+  <rect x="230" y="246" width="340" height="96" rx="8" fill="#11283d" stroke="#22d3ee" stroke-width="2"/>
+  <text x="400" y="288" fill="#e6edf3" font-size="20" font-weight="700" text-anchor="middle">AI model</text>
+  <text x="400" y="312" fill="#9cb0c6" font-size="15" text-anchor="middle">sends the robot motion commands</text>
+</svg>
