@@ -1,0 +1,7 @@
+# Per-step notes from coding agents (local only)
+explanation.md
+
+# OS and editor files
+.DS_Store
+*.swp
+.obsidian/

@@ -1,0 +1,199 @@
+# Sessions covered in these notes. Sessions without notes are left out on purpose.
+# Names and affiliations are as listed on the SMASH site; titles and summaries are filled in after review.
+event:
+  name: SMASH 2026
+  full_name: Symposium on Model Accountability, Sustainability and Healthcare
+  dates: [2026-11-03, 2026-11-04]
+  venue: Mila, Montréal
+  agenda_url: https://smashcon.org/en/agenda/
+
+# Theme tags used on the timeline. Filled in once the talk pages are final.
+themes: []
+
+sessions:
+  - slug: doshi-velez
+    day: 1
+    date: 2026-11-03
+    start: "09:40"
+    end: "10:40"
+    session: Keynote
+    speakers:
+      - name: "Finale Doshi-Velez"
+        affiliation: "Harvard University"
+    title: ""
+    topic: "How to get effective human–AI collaboration"
+    summary: ""
+    themes: []
+    page: talks/doshi-velez.md
+
+  - slug: gaud
+    day: 1
+    date: 2026-11-03
+    start: "10:40"
+    end: "11:10"
+    session: Keynote
+    speakers:
+      - name: "Vrushali Gaud"
+        affiliation: "Google Sustainability"
+    title: ""
+    topic: "Looking beyond the model: the physical footprint of AI"
+    summary: ""
+    themes: []
+    page: talks/gaud.md
+
+  - slug: luccioni
+    day: 1
+    date: 2026-11-03
+    start: "11:10"
+    end: "11:40"
+    session: Keynote
+    speakers:
+      - name: "Sasha Luccioni"
+        affiliation: "Sustainable AI Group"
+    title: ""
+    topic: "AI sustainability and what we should be measuring"
+    summary: ""
+    themes: []
+    page: talks/luccioni.md
+
+  - slug: el-emam
+    day: 1
+    date: 2026-11-03
+    start: "14:30"
+    end: "15:30"
+    session: Keynote
+    speakers:
+      - name: "Khaled El Emam"
+        affiliation: "CHEO Research Institute, University of Ottawa"
+    title: ""
+    topic: "Learnings from generating synthetic health data"
+    summary: ""
+    themes: []
+    page: talks/el-emam.md
+
+  - slug: vanschoren
+    day: 2
+    date: 2026-11-04
+    start: "09:40"
+    end: "10:40"
+    session: Keynote
+    speakers:
+      - name: "Joaquin Vanschoren"
+        affiliation: "TU Eindhoven, AMORE"
+    title: ""
+    topic: "Building an open ecosystem for AI research"
+    summary: ""
+    themes: []
+    page: talks/vanschoren.md
+
+  - slug: panel
+    day: 2
+    date: 2026-11-04
+    start: "11:00"
+    end: "12:00"
+    session: Panel
+    speakers:
+      - name: "Alan Forster"
+        affiliation: "McGill University Health Centre Research Institute"
+      - name: "Kathy Malas"
+        affiliation: "OROT, Jewish General Hospital"
+      - name: "Danina Kapetanovic"
+        affiliation: "Waterloo Regional Health Network"
+    moderator:
+      name: "Samer Faraj"
+      affiliation: "Institute for Transforming Healthcare, McGill University"
+    title: ""
+    topic: "AI, healthcare and organisational change"
+    summary: ""
+    themes: []
+    page: talks/panel.md
+
+  - slug: dilhac
+    day: 2
+    date: 2026-11-04
+    start: "13:00"
+    end: "13:30"
+    session: Invited talk
+    speakers:
+      - name: "Marc-Antoine Dilhac"
+        affiliation: "Université de Montréal; Algora Lab; CIFAR Chair in AI Ethics, Mila"
+    title: ""
+    topic: "Surviving AI or living well with AI? AI ethics as human flourishing"
+    summary: ""
+    themes: []
+    page: talks/dilhac.md
+
+  - slug: bacon
+    day: 2
+    date: 2026-11-04
+    start: "13:30"
+    end: "14:00"
+    session: Invited talk
+    speakers:
+      - name: "Pierre-Luc Bacon"
+        affiliation: "Université de Montréal, CIFAR, Mila"
+    title: ""
+    topic: "Making AI inference more sustainable, and trustworthy harnesses for agentic discovery"
+    summary: ""
+    themes: []
+    page: talks/bacon.md
+
+  - slug: parra-orlandoni
+    day: 2
+    date: 2026-11-04
+    start: "14:20"
+    end: "14:50"
+    session: Invited talk
+    speakers:
+      - name: "M. Alejandra Parra-Orlandoni"
+        affiliation: "Harvard Kennedy School"
+    title: ""
+    topic: "Governing the digital gorilla"
+    summary: ""
+    themes: []
+    page: talks/parra-orlandoni.md
+
+  - slug: michel
+    day: 2
+    date: 2026-11-04
+    start: "14:50"
+    end: "15:20"
+    session: Invited talk
+    speakers:
+      - name: "Jesse Michel"
+        affiliation: "Tutor Intelligence"
+    title: ""
+    topic: "Robots in society: where robot learning is going, safety and impact"
+    summary: ""
+    themes: []
+    page: talks/michel.md
+
+  - slug: lin
+    day: 2
+    date: 2026-11-04
+    start: "15:30"
+    end: "16:00"
+    session: Invited talk
+    speakers:
+      - name: "Michelle Lin"
+        affiliation: "Mila, Université de Montréal"
+    title: ""
+    topic: "Evaluations you can trust, and what sustainability means"
+    summary: ""
+    themes: []
+    page: talks/lin.md
+
+  - slug: kadivar
+    day: 2
+    date: 2026-11-04
+    start: "16:00"
+    end: "16:30"
+    session: Invited talk
+    speakers:
+      - name: "Amir Kadivar"
+        affiliation: "Tali AI"
+    title: ""
+    topic: "How to actually deploy AI in healthcare"
+    summary: ""
+    themes: []
+    page: talks/kadivar.md
